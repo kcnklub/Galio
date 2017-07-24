@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb92dba-1aac-4364-80e1-7b9069053d1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lol_api.iml" afterPath="$PROJECT_DIR$/.idea/lol_api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lol_api/LoLApi.py" afterPath="$PROJECT_DIR$/lol_api/LoLApi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lol_api/parameters.py" afterPath="$PROJECT_DIR$/lol_api/parameters.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +14,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="parameters.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="parameters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lol_api/parameters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="510">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -33,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -42,7 +37,7 @@
       <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="187">
               <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
@@ -61,12 +56,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoLApi.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoLApi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lol_api/LoLApi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="303" column="9" lean-forward="true" selection-start-line="303" selection-start-column="9" selection-end-line="303" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="767">
+              <caret line="339" column="9" lean-forward="true" selection-start-line="339" selection-start-column="9" selection-end-line="339" selection-end-column="9" />
+              <folding>
+                <element signature="e#445#1089#0" expanded="false" />
+                <element signature="e#1494#1628#0" expanded="false" />
+                <element signature="e#2349#2499#0" expanded="false" />
+                <element signature="e#2587#2745#0" expanded="false" />
+                <element signature="e#2839#3003#0" expanded="false" />
+                <element signature="e#3453#3629#0" expanded="false" />
+                <element signature="e#3697#3787#0" expanded="false" />
+                <element signature="e#4210#4397#0" expanded="false" />
+                <element signature="e#4594#4975#0" expanded="false" />
+                <element signature="e#5057#5230#0" expanded="false" />
+                <element signature="e#5308#5465#0" expanded="false" />
+                <element signature="e#5955#6145#0" expanded="false" />
+                <element signature="e#6268#6524#0" expanded="false" />
+                <element signature="e#6612#6789#0" expanded="false" />
+                <element signature="e#7454#7622#0" expanded="false" />
+                <element signature="e#7696#7849#0" expanded="false" />
+                <element signature="e#7931#8101#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,9 +106,9 @@
       <list>
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/lol_api/__init__.py" />
-        <option value="$PROJECT_DIR$/lol_api/LoLApi.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/lol_api/parameters.py" />
+        <option value="$PROJECT_DIR$/lol_api/LoLApi.py" />
       </list>
     </option>
   </component>
@@ -160,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_f02737a78695063deace08e96d5042710d3e32db/cmd/git.exe" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -338,7 +351,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945295" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -390,10 +403,72 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lol_api/parameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lol_api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lol_api/LoLApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5117">
+          <caret line="303" column="9" lean-forward="true" selection-start-line="303" selection-start-column="9" selection-end-line="303" selection-end-column="9" />
+          <folding>
+            <element signature="e#445#1089#0" expanded="false" />
+            <element signature="e#1494#1628#0" expanded="false" />
+            <element signature="e#2349#2499#0" expanded="false" />
+            <element signature="e#2587#2745#0" expanded="false" />
+            <element signature="e#2839#3003#0" expanded="false" />
+            <element signature="e#3453#3629#0" expanded="false" />
+            <element signature="e#3697#3787#0" expanded="false" />
+            <element signature="e#4210#4397#0" expanded="false" />
+            <element signature="e#4594#4975#0" expanded="false" />
+            <element signature="e#5057#5230#0" expanded="false" />
+            <element signature="e#5308#5465#0" expanded="false" />
+            <element signature="e#5955#6145#0" expanded="false" />
+            <element signature="e#6268#6524#0" expanded="false" />
+            <element signature="e#6612#6789#0" expanded="false" />
+            <element signature="e#7454#7622#0" expanded="false" />
+            <element signature="e#7696#7849#0" expanded="false" />
+            <element signature="e#7931#8101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lol_api/parameters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -432,7 +507,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3587">
           <caret line="213" column="16" lean-forward="true" selection-start-line="213" selection-start-column="16" selection-end-line="213" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#445#1089#0" expanded="false" />
+            <element signature="e#1494#1628#0" expanded="false" />
+            <element signature="e#2349#2499#0" expanded="false" />
+            <element signature="e#2587#2745#0" expanded="false" />
+            <element signature="e#2839#3003#0" expanded="false" />
+            <element signature="e#3453#3629#0" expanded="false" />
+            <element signature="e#3697#3787#0" expanded="false" />
+            <element signature="e#4210#4397#0" expanded="false" />
+            <element signature="e#4594#4975#0" expanded="false" />
+            <element signature="e#5057#5230#0" expanded="false" />
+            <element signature="e#5308#5465#0" expanded="false" />
+            <element signature="e#5955#6145#0" expanded="false" />
+            <element signature="e#6268#6524#0" expanded="false" />
+            <element signature="e#6612#6789#0" expanded="false" />
+            <element signature="e#7454#7622#0" expanded="false" />
+            <element signature="e#7696#7849#0" expanded="false" />
+            <element signature="e#7931#8101#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -458,7 +551,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2975">
           <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#445#1089#0" expanded="false" />
+            <element signature="e#1494#1628#0" expanded="false" />
+            <element signature="e#2349#2499#0" expanded="false" />
+            <element signature="e#2587#2745#0" expanded="false" />
+            <element signature="e#2839#3003#0" expanded="false" />
+            <element signature="e#3453#3629#0" expanded="false" />
+            <element signature="e#3697#3787#0" expanded="false" />
+            <element signature="e#4210#4397#0" expanded="false" />
+            <element signature="e#4594#4975#0" expanded="false" />
+            <element signature="e#5057#5230#0" expanded="false" />
+            <element signature="e#5308#5465#0" expanded="false" />
+            <element signature="e#5955#6145#0" expanded="false" />
+            <element signature="e#6268#6524#0" expanded="false" />
+            <element signature="e#6612#6789#0" expanded="false" />
+            <element signature="e#7454#7622#0" expanded="false" />
+            <element signature="e#7696#7849#0" expanded="false" />
+            <element signature="e#7931#8101#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -478,24 +589,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/urllib/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="147" column="18" lean-forward="false" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/urllib/request.py" />
     <entry file="file://$PROJECT_DIR$/lol_api/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -504,27 +598,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lol_api/LoLApi.py">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="303" column="9" lean-forward="true" selection-start-line="303" selection-start-column="9" selection-end-line="303" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lol_api/parameters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="510">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lol_api/LoLApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="339" column="9" lean-forward="true" selection-start-line="339" selection-start-column="9" selection-end-line="339" selection-end-column="9" />
+          <folding>
+            <element signature="e#445#1089#0" expanded="false" />
+            <element signature="e#1494#1628#0" expanded="false" />
+            <element signature="e#2349#2499#0" expanded="false" />
+            <element signature="e#2587#2745#0" expanded="false" />
+            <element signature="e#2839#3003#0" expanded="false" />
+            <element signature="e#3453#3629#0" expanded="false" />
+            <element signature="e#3697#3787#0" expanded="false" />
+            <element signature="e#4210#4397#0" expanded="false" />
+            <element signature="e#4594#4975#0" expanded="false" />
+            <element signature="e#5057#5230#0" expanded="false" />
+            <element signature="e#5308#5465#0" expanded="false" />
+            <element signature="e#5955#6145#0" expanded="false" />
+            <element signature="e#6268#6524#0" expanded="false" />
+            <element signature="e#6612#6789#0" expanded="false" />
+            <element signature="e#7454#7622#0" expanded="false" />
+            <element signature="e#7696#7849#0" expanded="false" />
+            <element signature="e#7931#8101#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
