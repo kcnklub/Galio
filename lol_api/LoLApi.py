@@ -490,3 +490,40 @@ class LolApi:
             region
         )
 
+    # Masteries API
+    def _masteries_request(self, end_url, region=None, **kwargs):
+        return self._base_request(
+            'platform/v{mastery_version}/{end_url}'.format(
+                end_url=end_url,
+                mastery_version=params.api_version['masteries']
+            ),
+            region,
+            **kwargs
+        )
+
+    def get_masteries_by_summoner_id(self, summoner_id, region=None):
+        return self._masteries_request(
+            'masteries/by-summoner/{summoner_id}'.format(
+                summoner_id=summoner_id
+            ),
+            region
+        )
+
+    # Roons API
+    def _runes_request(self, end_url, region=None, **kwargs):
+        return self._base_request(
+            'platform/v{runes_version}/{end_url}'.format(
+                end_url=end_url,
+                runes_version=params.api_version['runes']
+            ),
+            region
+            **kwargs
+        )
+
+    def get_rune_pages_by_summoner_id(self, summoner_id, region=None):
+        return self._runes_request(
+            'runes/by-summoner/{summoner_id}'.format(
+                summoner_id=summoner_id,
+            ),
+            region
+        )
