@@ -11,6 +11,69 @@ __license__ = 'MIT'
 __version__ = '0.0.1'
 
 
+class LolException(Exception):
+    def __init__(self, error, response):
+        self.error = error
+        self.headers = response.headers
+
+    def __str__(self):
+        return str(self.error)
+
+    def __eq__(self, other):
+        if isinstance(other, ''.__class__):
+            return self.error == other
+        elif isinstance(other, self.__class__):
+            return self.error == other.error and self.headers == other.headers
+        else:
+            return False
+
+    def __ne__(self, other):
+        return not self.__eq__(other)
+
+    def __hash__(self):
+        return super(LolException).__hash__()
+
+error_400 = 'Bad request'
+error_401 = 'Unauthorized'
+error_403 = 'Blacklisted key'
+error_404 = 'Game data not found'
+error_405 = 'Method not allowed'
+error_415 = 'Unsupported media type'
+error_422 = "Player exists, but hasn't played since match history collection began"
+error_429 = 'Too many requests'
+error_500 = 'Internal server error'
+error_502 = 'Bad gateway'
+error_503 = 'Service unavailable'
+error_504 = 'Gateway timeout'
+
+
+def throw_lol_exception(response):
+    if response.status == 400:
+        raise LolException(error_400, response)
+    elif response.status == 401:
+        raise LolException(error_401, response)
+    elif response.status == 403:
+        raise LolException(error_403, response)
+    elif response.status == 404:
+        raise LolException(error_404, response)
+    elif response.status == 405:
+        raise LolException(error_405, response)
+    elif response.status == 415:
+        raise LolException(error_415, response)
+    elif response.status == 422:
+        raise LolException(error_422, response)
+    elif response.status == 429:
+        raise LolException(error_429, response)
+    elif response.status == 500:
+        raise LolException(error_500, response)
+    elif response.status == 502:
+        raise LolException(error_502, response)
+    elif response.status == 503:
+        raise LolException(error_503, response)
+    elif response.status == 504:
+        raise LolException(error_504, response)
+
+
 class LolApi:
 
     def __init__(self, api_key, region=params.NORTH_AMERICA):
@@ -31,8 +94,10 @@ class LolApi:
             url=url,
             apiKey=self.api_key
         )
+        print(request_string + opt_params)
         req = Request(request_string + opt_params, headers=args)
         r = urlopen(req)
+        throw_lol_exception(r)
         return json.loads(r.read().decode('utf-8'))
 
     # champion API
@@ -58,10 +123,9 @@ class LolApi:
     # done
     def get_all_champions(self, region=None, free_to_play=False):
         return self._champion_request(
-            '?freeToPlay={free_to_play}'.format(
-                free_to_play='true' if free_to_play else 'false'
-            ), 
-            region
+            '',
+            region,
+            freeToPlay='true' if free_to_play else 'false'
         )
 
     # summoner API
@@ -76,7 +140,7 @@ class LolApi:
         )
 
     # done
-    def get_summoner_by_summoner_id(self, summoner_id, region=None):
+    def get_summoner_by_id(self, summoner_id, region=None):
         return self._summoner_request(
             '{summoner_id}'.format(
                 summoner_id=summoner_id
@@ -302,3 +366,127 @@ class LolApi:
             version=patch_version,
             tags=tags
         )
+
+    def get_static_item(self, region=None, locale=None, patch_version=None, tags=None):
+        return self._static_data_request(
+            'items',
+            region,
+            locale=locale,
+            version=patch_version,
+            tags=tags
+        )
+
+    def get_static_item_by_id(self, item_id, region=None, locale=None, patch_version=None, tags=None):
+        return self._static_data_request(
+            'items/{item_id}'.format(
+                item_id=item_id
+            ),
+            region,
+            locale=locale,
+            version=patch_version,
+            tags=tags
+        )
+
+    def get_static_language_strings(self, region=None, locale=None, patch_version=None):
+        return self._static_data_request(
+            'language-strings',
+            region,
+            locale=locale,
+            version=patch_version
+        )
+
+    def get_static_languages(self, region=None):
+        return self._static_data_request(
+            'languages',
+            region,
+        )
+
+    def get_static_maps(self, region=None, locale=None, patch_version=None):
+        return self._static_data_request(
+            'maps',
+            region,
+            locale=locale,
+            version=patch_version
+        )
+
+    def get_static_masteries(self, region=None, locale=None, patch_version=None, tags=None):
+        return self._static_data_request(
+            'masteries',
+            region,
+            locale=locale,
+            version=patch_version,
+            tags=tags
+        )
+
+    def get_static_masteries_by_id(self, mastery_id, region=None, locale=None, patch_version=None, tags=None):
+        return self._static_data_request(
+            'masteries/{mastery_id}'.format(
+                mastery_id=mastery_id
+            ),
+            region,
+            locale=locale,
+            version=patch_version,
+            tags=tags
+        )
+
+    def get_static_profile_icon(self, region=None, locale=None, patch_version=None):
+        return self._static_data_request(
+            'profile-icons',
+            region,
+            locale=locale,
+            version=patch_version
+        )
+
+    def get_static_realms(self, region=None):
+        return self._static_data_request(
+            'realms',
+            region
+        )
+
+    def get_static_runes(self, region=None, locale=None, patch_version=None, tags=None):
+        return self._static_data_request(
+            'runes',
+            region,
+            locale=locale,
+            version=patch_version,
+            tags=tags
+        )
+
+    def get_static_runes_by_id(self, rune_id, region=None, locale=None, patch_version=None, tags=None):
+        return self._static_data_request(
+            'runes/{rune_id}'.format(
+                rune_id=rune_id
+            ),
+            region,
+            tags=tags,
+            locale=locale,
+            version=patch_version
+        )
+
+    def get_static_summoner_spells(self, region=None, locale=None, patch_version=None, tags=None, data_by_id=False):
+        return self._static_data_request(
+            'summoner-spells',
+            region,
+            locale=locale,
+            version=patch_version,
+            dataById=data_by_id,
+            tags=tags
+        )
+
+    def get_static_summoner_spells_by_id(self, summoner_spell_id, region=None, locale=None, patch_version=None, tags=None):
+        return self._static_data_request(
+            'summoner-spells/{spell_id}'.format(
+                spell_id=summoner_spell_id
+            ),
+            region,
+            locale=locale,
+            version=patch_version,
+            tags=tags
+        )
+
+    def get_static_versions(self, region=None):
+        return self._static_data_request(
+            'versions',
+            region
+        )
+
