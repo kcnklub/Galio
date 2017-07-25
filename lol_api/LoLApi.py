@@ -301,7 +301,7 @@ class LolApi:
         )
 
     # done
-    def get_champion_master_by_summoner_and_champion_id(self, summoner_id, champion_id, region=None):
+    def get_champion_mastery_by_summoner_and_champion_id(self, summoner_id, champion_id, region=None):
         return self._champion_mastery_request(
             'champion-masteries/by-summoner/{summoner_id}/by-champion/{champion_id}'.format(
                 summoner_id=summoner_id,
