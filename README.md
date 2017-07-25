@@ -39,7 +39,7 @@ ekko = x.get_champion_by_id(245)
 ### Spectator API
 This is used for getting Active games of players by id and Featured games. 
 ```python
-active_match = x.get_active_game_info_by_summoner_id('summoner-id')
+active_match = x.get_active_game_info_by_summoner_id(summoner-id)
 featured_games = x.get_featured_games()
 ```
 ### Match API
