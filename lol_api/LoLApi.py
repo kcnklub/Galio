@@ -516,7 +516,7 @@ class LolApi:
                 end_url=end_url,
                 runes_version=params.api_version['runes']
             ),
-            region
+            region,
             **kwargs
         )
 

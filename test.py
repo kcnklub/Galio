@@ -31,5 +31,5 @@ def summoner_api_test():
     print(me_by_id)
     print(me_by_account_id)
 
-
-summoner_api_test()
+# champion_api_test()
+# summoner_api_test()
