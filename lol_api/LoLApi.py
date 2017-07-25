@@ -2,8 +2,11 @@
 some information that i dont have.
 """
 from urllib.request import urlopen, Request
+from urllib.error import HTTPError
 import json
 from lol_api import parameters as params
+from collections import deque
+import time
 
 __title__ = 'LolApi'
 __author__ = 'Kyle Miller'
@@ -74,11 +77,38 @@ def throw_lol_exception(response):
         raise LolException(error_504, response)
 
 
+class RateLimit:
+
+    def __init__(self, allowed_calls, seconds):
+        self.allowed_calls = allowed_calls
+        self.seconds = seconds
+        self.made_requests = deque()
+
+    def __reload(self):
+        t = time.time()
+        while len(self.made_requests) > 0 and self.made_requests[0] < t:
+            self.made_requests.popleft()
+
+    def add_request(self):
+        self.made_requests.append(time.time() + self.seconds)
+
+    def request_available(self):
+        self.__reload()
+        return len(self.made_requests) < self.allowed_calls
+
+
 class LolApi:
 
-    def __init__(self, api_key, region=params.NORTH_AMERICA):
+    def __init__(self, api_key, region=params.NORTH_AMERICA, limits=(RateLimit(10, 10), RateLimit(500, 600))):
         self.api_key = api_key
         self.region = region
+        self.limits = limits
+
+    def can_make_request(self):
+        for lim in self.limits:
+            if not lim.request_available():
+                return False
+        return True
 
     def _base_request(self, url, region, static=False, **kwargs):
         if region is None:
@@ -94,10 +124,11 @@ class LolApi:
             url=url,
             apiKey=self.api_key
         )
-        print(request_string + opt_params)
-        req = Request(request_string + opt_params, headers=args)
-        r = urlopen(req)
-        throw_lol_exception(r)
+        try:
+            req = Request(request_string + opt_params, headers=args)
+            r = urlopen(req)
+        except HTTPError as e:
+            throw_lol_exception(e)
         return json.loads(r.read().decode('utf-8'))
 
     # champion API
