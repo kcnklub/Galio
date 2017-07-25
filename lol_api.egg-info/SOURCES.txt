@@ -1,0 +1,8 @@
+setup.py
+lol_api/LoLApi.py
+lol_api/__init__.py
+lol_api/parameters.py
+lol_api.egg-info/PKG-INFO
+lol_api.egg-info/SOURCES.txt
+lol_api.egg-info/dependency_links.txt
+lol_api.egg-info/top_level.txt
