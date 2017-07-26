@@ -1,6 +1,6 @@
 Metadata-Version: 1.2
-Name: lol-api
-Version: 1.0.0
+Name: lolapi.py
+Version: 1.0.1
 Summary: Python wrapper for using riot games league of legends api
 Home-page: https://github.com/kcnklub/lol-api.py
 Author: Kyle Miller
@@ -11,7 +11,7 @@ Description: ï»¿# lol-api.py
         
         ## Installation
         ```
-        pip install lol-api
+        pip install lolapi-py
         ```
         ## API Versions
         | Name | Version |

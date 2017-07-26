@@ -3,7 +3,7 @@ Lol-api is a light wrapper for the Riot Games, League of Legends API. I built th
 
 ## Installation
 ```
-pip install lol-api
+pip install lolapi-py
 ```
 ## API Versions
 | Name | Version |

@@ -1,3 +1,4 @@
+setup.cfg
 setup.py
 lol_api/LoLApi.py
 lol_api/__init__.py
