@@ -1,4 +1,4 @@
-﻿# Galio ![](http://github.com/kcnklub/galio/Galiopic.png)
+﻿# Galio ![](https://github.com/kcnklub/Galio/blob/master/Galiopic.png)
 Galio is a light wrapper for the Riot Games, League of Legends API. I built this for a learning project and for a future
 project that I plan on working on. I used Darquiche's project as inspiration for this. 
 Check out his project [here](https://github.com/Darquiche/Riot-Observer).
