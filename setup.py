@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
-from lol_api import *
+from Galio import *
 
 setup(
-    name='lolapi.py',
-    version='1.0.1',
+    name='galio',
+    version='1.0.0',
     packages=find_packages(),
     author='Kyle Miller',
     author_email='kylemiller457@gmail.com',
