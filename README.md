@@ -1,7 +1,7 @@
-﻿# Galio
+﻿# Galio ![](http://github.com/kcnklub/galio/Galiopic.png)
 Galio is a light wrapper for the Riot Games, League of Legends API. I built this for a learning project and for a future
- project that I plan on working on. I used Darquiche's project as inspiration for this. 
- Check out his project [here](https://github.com/Darquiche/Riot-Observer).
+project that I plan on working on. I used Darquiche's project as inspiration for this. 
+Check out his project [here](https://github.com/Darquiche/Riot-Observer).
 
 ## Installation
 ```
@@ -12,11 +12,11 @@ Along with Galio there is a params file that can be used to access tag
 strings and queue strings instead of manually typing them out. For 
 example for the ranked solo queue string. 
 ```python
->>>from Galio import parameters as params
+>>>from Galio import parameters as param
 >>>param.queue_ranked['solo']
 RANKED_SOLO_5x5
 ```
-Also with queue strings there are all of the string for regions and tags used in the static data API
+Also with queue strings there are all of the string for regions and tags used in the static data API.
 ## API Versions
 | Name | Version |
 --- | --- 
