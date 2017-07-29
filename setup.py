@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 from Galio import *
 
 setup(
-    name='galio',
+    name='Galio',
     version='1.0.0',
     packages=find_packages(),
     author='Kyle Miller',
@@ -15,5 +15,5 @@ setup(
     keywords='league, api, riot games',
     python_requires='>=3',
     include_package_data=True,
-    classifiers =[]
+    classifiers=[]
 )

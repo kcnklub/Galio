@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+Galio/Galio.py
+Galio/__init__.py
+Galio/parameters.py
+Galio.egg-info/PKG-INFO
+Galio.egg-info/SOURCES.txt
+Galio.egg-info/dependency_links.txt
+Galio.egg-info/top_level.txt
